@@ -95,7 +95,7 @@ class Horde_Support_Stub implements ArrayAccess, Countable, IteratorAggregate
 
      /**
       */
-     public function offsetGet($offset)
+     public function offsetGet($offset): mixed
      {
          return null;
      }

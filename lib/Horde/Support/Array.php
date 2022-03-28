@@ -163,7 +163,7 @@ class Horde_Support_Array implements ArrayAccess, Countable, IteratorAggregate
      *
      * @see __get()
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->__get($offset);
     }

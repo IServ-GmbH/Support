@@ -24,7 +24,7 @@ class Horde_Support_CaseInsensitiveArray extends ArrayIterator
 {
     /**
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return (is_null($offset = $this->_getRealOffset($offset)))
             ? null
