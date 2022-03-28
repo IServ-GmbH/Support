@@ -33,7 +33,7 @@ class Horde_Support_CaseInsensitiveArray extends ArrayIterator
 
     /**
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($roffset = $this->_getRealOffset($offset))) {
             parent::offsetSet($offset, $value);
@@ -44,14 +44,14 @@ class Horde_Support_CaseInsensitiveArray extends ArrayIterator
 
     /**
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return !is_null($offset = $this->_getRealOffset($offset));
     }
 
     /**
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         if (!is_null($offset = $this->_getRealOffset($offset))) {
             parent::offsetUnset($offset);

@@ -21,13 +21,11 @@
             "role": "developer"
         }
     ],
-    "version": "103",
-    "time": "2017-11-11",
     "require": {
         "php": ">=7.3",
-        "horde/exception": "103",
-        "horde/stream-wrapper": "103",
-        "horde/util": "103"
+        "horde/exception": ">=106",
+        "horde/stream-wrapper": ">=106",
+        "horde/util": ">=106"
     },
     "suggest": {
         "horde/test": "^2.1"
