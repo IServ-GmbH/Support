@@ -175,7 +175,7 @@ class Horde_Support_Array implements ArrayAccess, Countable, IteratorAggregate
      */
     public function offsetSet($offset, $value): void
     {
-        return $this->__set($offset, $value);
+        $this->__set($offset, $value);
     }
 
     /**
@@ -195,7 +195,7 @@ class Horde_Support_Array implements ArrayAccess, Countable, IteratorAggregate
      */
     public function offsetUnset($offset): void
     {
-        return $this->__unset($offset);
+        $this->__unset($offset);
     }
 
 }
